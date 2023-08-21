@@ -18,4 +18,9 @@ class PublicPageController extends Controller
         $categories = Category::whereIn('id', $post->categories->pluck('category_id'))->get();
         return view('public_pages.show', ['post' => $post, 'categories' => $categories]);
     }
+
+    public function showPosts () {
+        $posts = Post::all();
+        return view('public_pages.post', ['posts' => $posts]);
+    }
 }

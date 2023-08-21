@@ -51,6 +51,7 @@ Route::middleware('auth')->prefix('dashboard')->group(function () {
 
 
 Route::get('/', [PublicPageController::class, 'homepage'])->name('homepage');
+Route::get('/posts', [PublicPageController::class, 'showPosts'])->name('posts');
 Route::get('/register', [RegisterController::class, 'index'])->name('register.index');
 Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
 Route::get('/login', [LoginController::class, 'index'])->name('login.index');

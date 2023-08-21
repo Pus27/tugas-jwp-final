@@ -7,9 +7,9 @@
                 <div class="row w-100 mx-0">
                     <div class="col-lg-4 mx-auto">
                         <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-                            <div class="brand-logo">
+                            <a href="{{url('')}}" class="brand-logo">
                                 <img src="../../images/logo.svg" alt="logo">
-                            </div>
+                            </a>
                             <h4>New here?</h4>
                             <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
                             <form class="pt-3" action="{{ route('register.store') }}" method="POST">
